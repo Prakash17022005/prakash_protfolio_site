@@ -36,3 +36,35 @@ document.querySelectorAll('.nav_link').forEach(link => {
         this.classList.add('active');
     });
 });
+
+const fonts=[
+    'Italianno',
+    'Noto Sans Old Italic',
+    'Piedra',
+    'Audiowide',
+    'Atomic Age',
+    'Amatic SC',
+    'Rye',
+    'Indie Flower',
+    'Tiny5',
+    'Chakra Petch'
+]
+
+const letters=document.querySelectorAll('.letter');
+
+let count=0;
+
+const rollIntro = () => {
+    letters.forEach(letter=>{
+        let randomFontIndex=Math.floor(Math.random() * fonts.length);
+        let randomFont = fonts[randomFontIndex];
+        letter.style.fontFamily=randomFont;
+    })
+}
+
+let introAnimation=setInterval(function(){
+    rollIntro();
+    if(count>50)
+        clearInterval(introAnimation);
+    count++;
+},270);
