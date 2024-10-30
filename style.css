@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 60px;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4%;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* Prevent overflow */
+    z-index: 1000;
+}
+
+.img-div {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.img-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.img-div h1{
+    margin-left: 10px;
+}
+
+.nav_menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Centers the menu items */
+    text-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.nav_menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    text-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.nav_item {
+    margin: 0 15px; /* Adjust the margins between items */
+    text-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.nav_item a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.social_nav {
+    display: flex;
+    gap: 20px;
+}
+
+.soclogo {
+    width: 20px;
+    height: 20px;
+}
+
+.link {
+    display: inline-block;
+    border-radius: 50%;
+
+}
+
+.soclogo:hover{
+    width: 22px;
+    height: 22px;
+}
+
+.mob-arrow{
+    display: none;
+    rotate: 270deg;
+}
+
+.menuops{
+    display: none;
+}
+
+.nav_link{
+    text-decoration: none;
+    color: black;
+    transition: color 1s ease;
+}
+
+.nav_link:hover{
+    color: rgb(239, 74, 74);
+}
+
+.nav_link.active{
+    color: rgb(239, 45, 45);
+    font-weight:normal;
+    border-bottom: 2px solid rgb(254, 253, 253);
+    transition: border-bottom 1s ease-in-out ;
+   
+}
+
+
+
+
+@media screen and (max-width:921px){
+
+    .nav_menu {
+        display: none;
+    }
+
+    .mob-arrow{
+        display: block;
+        width: 20px;
+        position: absolute;
+        margin-left: 14px;
+    }
+
+
+    .rotated{
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+    }
+
+    .mobmenu{
+        display: flex;
+        margin-left: 5px;
+        position:relative;
+        z-index:1000
+    }
+
+    .menuops{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 15px;
+        background: rgba(250, 249, 249, 0.071);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+        width: fit-content; /* Fits to content width */
+        border: 1px solid rgba(213, 211, 211, 0.2);
+        margin-left: 4px;
+        margin-top: 23px;
+        opacity: 0;
+    }
+
+    .menu_icons{
+        display: inline-block;
+        padding:0;
+        margin:0;
+    }
+
+    .menulogo{
+        width:20px;
+        height:20px;
+    }
+
+    .menulogo:hover{
+        width: 23px;
+        height: 23px;
+    }
+
+    .social_nav{
+        margin-right: 2px;
+    }
+    .soclogo{
+        width: 17px;
+    }
+
+
+}
