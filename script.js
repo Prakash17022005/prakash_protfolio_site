@@ -64,7 +64,24 @@ const rollIntro = () => {
 
 let introAnimation=setInterval(function(){
     rollIntro();
-    if(count>50)
+    if(count>30){
         clearInterval(introAnimation);
+
+        setTimeout(()=>{
+            const preloader=this.document.getElementById('preloader');
+            preloader.style.display="none";
+
+            //show main content
+            const maincontent=this.document.getElementById("main-content");
+            maincontent.style.display="block";
+        },1000);
+    }
+        
     count++;
-},270);
+},200);
+
+//preloader script
+
+window.addEventListener("load",function(){
+    
+});
