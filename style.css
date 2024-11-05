@@ -246,7 +246,7 @@ header{
 }
 
 
-@media screen and (max-width:921px){
+@media screen and (max-width:930px){
 
     .nav_menu {
         display: none;
@@ -316,12 +316,17 @@ header{
         width: 17px;
     }
 
+
     /*home*/
 
     .home{
         flex-direction: column;
         margin-top: 10%;
-        
+        height: 100vh;
+        width: 100%;
+        display: flex;
+
+        border: 1px solid red;
     }
 
     .homediv1{
@@ -352,5 +357,9 @@ header{
         font-size: 3rem;  
     }
     
+    .img-container{
+        width:50%;
+    }
+
 
 }
