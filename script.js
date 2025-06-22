@@ -37,51 +37,57 @@ document.querySelectorAll('.nav_link').forEach(link => {
     });
 });
 
-const fonts=[
-    'Italianno',
-    'Noto Sans Old Italic',
-    'Piedra',
-    'Audiowide',
-    'Atomic Age',
-    'Amatic SC',
-    'Rye',
-    'Indie Flower',
-    'Tiny5',
-    'Chakra Petch'
-]
 
-const letters=document.querySelectorAll('.letter');
 
-let count=0;
+
+// Preloader font animation
+const fonts = [
+    'Italianno', 'Noto Sans Old Italic', 'Piedra', 'Audiowide', 
+    'Atomic Age', 'Amatic SC', 'Rye', 'Indie Flower', 'Chakra Petch'
+];
+
+const letters = document.querySelectorAll('.letter');
+let count = 0;
 
 const rollIntro = () => {
-    letters.forEach(letter=>{
-        let randomFontIndex=Math.floor(Math.random() * fonts.length);
+    letters.forEach(letter => {
+        let randomFontIndex = Math.floor(Math.random() * fonts.length);
         let randomFont = fonts[randomFontIndex];
-        letter.style.fontFamily=randomFont;
-    })
-}
+        letter.style.fontFamily = randomFont;
+    });
+};
 
-let introAnimation=setInterval(function(){
-    rollIntro();
-    if(count>30){
-        clearInterval(introAnimation);
-
-        setTimeout(()=>{
-            const preloader=this.document.getElementById('preloader');
-            preloader.style.display="none";
-
-            //show main content
-            const maincontent=this.document.getElementById("main-content");
-            maincontent.style.display="block";
-        },1000);
-    }
-        
-    count++;
-},200);
-
-//preloader script
-
-window.addEventListener("load",function(){
-    
+window.addEventListener("DOMContentLoaded", () => {
+    let introAnimation = setInterval(() => {
+        rollIntro();
+        count++;
+        if (count > 10) {
+            clearInterval(introAnimation);
+            setTimeout(() => {
+                document.getElementById('preloader').style.display = "none";
+                document.getElementById("main-content").style.display = "block";
+            }, 1000);
+        }
+    }, 300);
 });
+
+
+//typing animation
+
+const options={
+    strings:[
+        "A <strong>Creative Developer</strong> focused on <em>“Crafting Code with Purpose.”</em>",
+        "A <strong>Creative Developer</strong> focused on <em>“Building Tomorrow, Today.”</em>",
+        "A <strong>Creative Developer</strong> focused on <em>“Building with Intention, Innovating with Heart.”</em>"
+    ],
+
+    typeSpeed:80,
+    backSpeed:60,
+    backDelay:2000,
+    loop:true,
+    smartBackspace:true,
+    showCursor:true,
+    cursorChar:' |',
+};
+
+new Typed("#typing-animation",options);

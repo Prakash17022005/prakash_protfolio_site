@@ -9,6 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Atomic+Age&family=Audiowide&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Indie+Flower&family=Italianno&family=Noto+Sans+Old+Italic&family=Piedra&family=Rye&family=Tiny5&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
 
@@ -41,7 +46,7 @@
                     <div class="nav_menu" id="navMenu">
                                 <ul>
                                     <li class="nav_item"><a class="nav_link active" href="#">Home</a></li>
-                                    <li class="nav_item"><a class="nav_link" href="#">About</a></li>
+                                    <li class="nav_item"><a class="nav_link" href="#about">About</a></li>
                                     <li class="nav_item"><a class="nav_link" href="#">Skills</a></li>
                                     <li class="nav_item"><a class="nav_link" href="#">My Work</a></li>
                                     <li class="nav_item"><a class="nav_link" href="#">Certificates</a></li>
@@ -69,12 +74,12 @@
                     
                     <div class="menuops">
 
-                        <a href="#"  class="menu_icons"><img src="asserts\icons8-home (1).svg" alt="Home" class="menulogo"></a>
-                        <a href="#"  class="menu_icons"><img src="asserts\flexible.png" alt="About" class="menulogo"></a>
-                        <a href="#"  class="menu_icons"><img src="asserts\icons8-skills-64.png" alt="Skills" class="menulogo"></a>
-                        <a href="#"  class="menu_icons"><img src="asserts\student.png" alt="My Work" class="menulogo"></a>
-                        <a href="#"  class="menu_icons"><img src="asserts\icons8-certificate-64 (1).png" alt="Certificates" class="menulogo"></a>
-                        <a href="#"  class="menu_icons"><img src="asserts\icons8-contact-50.png" alt="Contact" class="menulogo"></a>
+                        <a href="#home"  class="menu_icons"><img src="asserts\icons8-home (1).svg" alt="Home" class="menulogo"></a><p>Home</p>
+                        <a href="#about"  class="menu_icons"><img src="asserts\flexible.png" alt="About" class="menulogo"></a><p>About</p>
+                        <a href="#"  class="menu_icons"><img src="asserts\icons8-skills-64.png" alt="Skills" class="menulogo"></a><p>Skills</p>
+                        <a href="#"  class="menu_icons"><img src="asserts\student.png" alt="My Work" class="menulogo"></a><p>My Work</p>
+                        <a href="#"  class="menu_icons"><img src="asserts\icons8-certificate-64 (1).png" alt="Certificates" class="menulogo"></a><p>Certificates</p>
+                        <a href="#"  class="menu_icons"><img src="asserts\icons8-contact-50.png" alt="Contact" class="menulogo"></a><p>Contact</p>
 
                     </div>
                 </div>
@@ -85,27 +90,64 @@
 
             <section class="home" id="home">
 
-                <div class="homediv1" >
-                    <div class="img-container">
-                        <img src="asserts\dN0BQfdyXrTEP3ZuKlZtS.1020.IRZXSOYe1.jpg" alt="my_image">
+                <div class="grid_home">
+                    <div class="homediv1" >
+                        <div class="img-container">
+                            <img src="asserts\imglogo.jpg" alt="my_image">
+                        </div>
                     </div>
-                </div>
 
-                <div class="homediv2" >
+                    
 
-                    <h1>Hi there,</h1>
+                        <div class="hi_name">
+                            <p class="name_hi">Hi there,</p>
+                            <p class="name_hi">I'm <span class="prakash-text">Prakash</span></p>
+                            <p class="name_highlight">Python-Powered Full-Stack Developer | AI/ML Enthusiast | Effective Communicator & Team Player | Problem Solver</p>
+                        </div>
+                        <div class="intro_animation">
+                            <span class="introp1" id="typing-animation">
+                                A <strong>Creative Developer</strong> focused on <em>“Crafting Code with Purpose.”</em>
+                            </span>
+                        </div>
+                        <div class="home_button">
+                            <button>View My Work</button>
+                            <button>Contact Me</button>
+                        </div>
 
-                    <div class="container-font">
-                        <h1>I'm</h1>
+                        <div class="home_text">
+                            <p>
+                                Passionate about building intelligent applications, designing seamless user experiences, and leveraging AI for problem-solving. With expertise in Python, AI, and Web Technologies, I bring innovative ideas to life with scalable, efficient, and secure solutions.
+                            </p>
+                            <br><br>
+                            <p>Constantly exploring cutting-edge technologies, automation, and Matchine Learning, I believe in writing clean, purposeful, and impactful code.</p>
+                            
+                        </div>
                         
-                    </div>
-
-                </div>
+                    
+                </div>    
 
             </section>
 
             <section class="about" id="about">
-
+                <div class="home_text">
+                    <p>
+                        Passionate about building intelligent applications, designing seamless user experiences, and leveraging AI for problem-solving. With expertise in Python, AI, and Web Technologies, I bring innovative ideas to life with scalable, efficient, and secure solutions.
+                    </p>
+                    <br>
+                    <p>Constantly exploring cutting-edge technologies, automation, and Matchine Learning, I believe in writing clean, purposeful, and impactful code.</p>
+                    
+                </div>
+                <p>
+                    Passionate about building intelligent applications, designing seamless user experiences, and leveraging AI for problem-solving. With expertise in Python, AI, and Web Technologies, I bring innovative ideas to life with scalable, efficient, and secure solutions.
+                </p>
+                <br>
+                <p>Constantly exploring cutting-edge technologies, automation, and Matchine Learning, I believe in writing clean, purposeful, and impactful code.</p><p>
+                    Passionate about building intelligent applications, designing seamless user experiences, and leveraging AI for problem-solving. With expertise in Python, AI, and Web Technologies, I bring innovative ideas to life with scalable, efficient, and secure solutions.
+                </p>
+                <br>
+                <p>Constantly exploring cutting-edge technologies, automation, and Matchine Learning, I believe in writing clean, purposeful, and impactful code.</p>
+                <p>Constantly exploring cutting-edge technologies, automation, and Matchine Learning, I believe in writing clean, purposeful, and impactful code.</p>
+                <p>Constantly exploring cutting-edge technologies, automation, and Matchine Learning, I believe in writing clean, purposeful, and impactful code.</p>
 
             </section>
 
@@ -122,7 +164,9 @@
     </div>
 
     
-
+    <!--scripts-->
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 </body>
 </html>
