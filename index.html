@@ -1,172 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prakash Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Atomic+Age&family=Audiowide&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Indie+Flower&family=Italianno&family=Noto+Sans+Old+Italic&family=Piedra&family=Rye&family=Tiny5&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prakash Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Piedra&family=Audiowide&family=Atomic+Age&family=Amatic+SC&family=Rye&family=Chakra+Petch&display=swap" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
+
 <body>
 
-    <!--preloader-->
-    <div id="preloader">
+<!-- Preloader -->
+<div id="preloader">
+  <div class="prakash">
+    <span class="letter">P</span><span class="letter">R</span><span class="letter">A</span>
+    <span class="letter">K</span><span class="letter">A</span><span class="letter">S</span><span class="letter">H</span>
+  </div>
+</div>
 
-        <div class="prakash">
-            <span class="letter">P</span>
-            <span class="letter">R</span>
-            <span class="letter">A</span>
-            <span class="letter">K</span>
-            <span class="letter">A</span>
-            <span class="letter">S</span>
-            <span class="letter">H</span>
-        </div>
+<!-- Main Content -->
+<div id="main-content" style="display:none">
 
-    </div>
-
-    <!--Main content-->
-    <div id="main-content" style="display:none">
-
-            <!--Navbar-->
-            <header>
-                <nav class="nav-bar">
-                    <div class="img-div">
-                        <img src="asserts\imglogo.jpg" alt="myimg">
-                        <h1>PRAKASH</h1>
-                    </div>
-
-                    <div class="nav_menu" id="navMenu">
-                                <ul>
-                                    <li class="nav_item"><a class="nav_link active" href="#">Home</a></li>
-                                    <li class="nav_item"><a class="nav_link" href="#about">About</a></li>
-                                    <li class="nav_item"><a class="nav_link" href="#">Skills</a></li>
-                                    <li class="nav_item"><a class="nav_link" href="#">My Work</a></li>
-                                    <li class="nav_item"><a class="nav_link" href="#">Certificates</a></li>
-                                    <li class="nav_item"><a class="nav_link" href="#">Contact</a></li>
-                                </ul>
-                    </div>
-                                
-                    <div class="social_nav">
-                                    
-                                    <a href="https://github.com/Prakash17022005"  class="link"><img src="asserts\github.svg" alt="github" class="soclogo"></a>
-                                    <a href="mailto:prakashpoint2005@gmail.com"  class="link"><img src="asserts\email-svgrepo-com.svg" alt="email" class="soclogo"></a>
-                                    <a href="#"  class="link"><img src="asserts\logo-instagram.svg" alt="instagram" class="soclogo"></a>
-                                    <a href="https://www.linkedin.com/in/prakash-n-b1522b258/"  class="link"><img src="asserts\linkedin-161-svgrepo-com.svg" alt="linkedin" class="soclogo"></a>
-
-                    </div>
-                                
-                    
-                </nav>
-            
-
-                <div class="mobmenu">
-                    <div class="arrow">
-                        <img src="asserts\angle-small-down.svg" alt="arrow" class="mob-arrow" onclick="open_menu(this)">
-                    </div>
-                    
-                    <div class="menuops">
-
-                        <a href="#home"  class="menu_icons"><img src="asserts\icons8-home (1).svg" alt="Home" class="menulogo"></a><p>Home</p>
-                        <a href="#about"  class="menu_icons"><img src="asserts\flexible.png" alt="About" class="menulogo"></a><p>About</p>
-                        <a href="#"  class="menu_icons"><img src="asserts\icons8-skills-64.png" alt="Skills" class="menulogo"></a><p>Skills</p>
-                        <a href="#"  class="menu_icons"><img src="asserts\student.png" alt="My Work" class="menulogo"></a><p>My Work</p>
-                        <a href="#"  class="menu_icons"><img src="asserts\icons8-certificate-64 (1).png" alt="Certificates" class="menulogo"></a><p>Certificates</p>
-                        <a href="#"  class="menu_icons"><img src="asserts\icons8-contact-50.png" alt="Contact" class="menulogo"></a><p>Contact</p>
-
-                    </div>
-                </div>
-
-            </header>
-
-            <!--Home section-->
-
-            <section class="home" id="home">
-
-                <div class="grid_home">
-                    <div class="homediv1" >
-                        <div class="img-container">
-                            <img src="asserts\imglogo.jpg" alt="my_image">
-                        </div>
-                    </div>
-
-                    
-
-                        <div class="hi_name">
-                            <p class="name_hi">Hi there,</p>
-                            <p class="name_hi">I'm <span class="prakash-text">Prakash</span></p>
-                            <p class="name_highlight">Python-Powered Full-Stack Developer | AI/ML Enthusiast | Effective Communicator & Team Player | Problem Solver</p>
-                        </div>
-                        <div class="intro_animation">
-                            <span class="introp1" id="typing-animation">
-                                A <strong>Creative Developer</strong> focused on <em>“Crafting Code with Purpose.”</em>
-                            </span>
-                        </div>
-                        <div class="home_button">
-                            <button>View My Work</button>
-                            <button>Contact Me</button>
-                        </div>
-
-                        <div class="home_text">
-                            <p>
-                                Passionate about building intelligent applications, designing seamless user experiences, and leveraging AI for problem-solving. With expertise in Python, AI, and Web Technologies, I bring innovative ideas to life with scalable, efficient, and secure solutions.
-                            </p>
-                            <br><br>
-                            <p>Constantly exploring cutting-edge technologies, automation, and Matchine Learning, I believe in writing clean, purposeful, and impactful code.</p>
-                            
-                        </div>
-                        
-                    
-                </div>    
-
-            </section>
-
-            <section class="about" id="about">
-                <div class="home_text">
-                    <p>
-                        Passionate about building intelligent applications, designing seamless user experiences, and leveraging AI for problem-solving. With expertise in Python, AI, and Web Technologies, I bring innovative ideas to life with scalable, efficient, and secure solutions.
-                    </p>
-                    <br>
-                    <p>Constantly exploring cutting-edge technologies, automation, and Matchine Learning, I believe in writing clean, purposeful, and impactful code.</p>
-                    
-                </div>
-                <p>
-                    Passionate about building intelligent applications, designing seamless user experiences, and leveraging AI for problem-solving. With expertise in Python, AI, and Web Technologies, I bring innovative ideas to life with scalable, efficient, and secure solutions.
-                </p>
-                <br>
-                <p>Constantly exploring cutting-edge technologies, automation, and Matchine Learning, I believe in writing clean, purposeful, and impactful code.</p><p>
-                    Passionate about building intelligent applications, designing seamless user experiences, and leveraging AI for problem-solving. With expertise in Python, AI, and Web Technologies, I bring innovative ideas to life with scalable, efficient, and secure solutions.
-                </p>
-                <br>
-                <p>Constantly exploring cutting-edge technologies, automation, and Matchine Learning, I believe in writing clean, purposeful, and impactful code.</p>
-                <p>Constantly exploring cutting-edge technologies, automation, and Matchine Learning, I believe in writing clean, purposeful, and impactful code.</p>
-                <p>Constantly exploring cutting-edge technologies, automation, and Matchine Learning, I believe in writing clean, purposeful, and impactful code.</p>
-
-            </section>
-
-            <section class="skills" id="skills">
-
-
-            </section>
-
-            <section class="work" id="work">
-
-
-            </section>
-
-    </div>
+  <!-- Header -->
+  <header>
+    <nav class="nav-bar">
+      <div class="img-div">
+        <img src="asserts/imglogo.jpg" alt="Profile" />
+        <h1>PRAKASH</h1>
+      </div>
+      <div class="nav_menu" id="navMenu">
+        <ul>
+          <li class="nav_item"><a class="nav_link active" href="#">Home</a></li>
+          <li class="nav_item"><a class="nav_link" href="#about">About</a></li>
+          <li class="nav_item"><a class="nav_link" href="#skills">Skills</a></li>
+          <li class="nav_item"><a class="nav_link" href="#work">My Work</a></li>
+          <li class="nav_item"><a class="nav_link" href="#certificates">Certificates</a></li>
+          <li class="nav_item"><a class="nav_link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="social_nav">
+        <a href="https://github.com/Prakash17022005" target="_blank" rel="noopener noreferrer"><img src="asserts/github.svg" alt="GitHub" class="soclogo" /></a>
+        <a href="prakashpoint2005@gmail.com" target="_blank" rel="noopener noreferrer"><img src="asserts\email-svgrepo-com.svg" alt="Email" class="soclogo" /></a>
+        <a href="www.linkedin.com/in/prakash-n-b1522b258" target="_blank" rel="noopener noreferrer"><img src="asserts/linkedin-161-svgrepo-com.svg" alt="LinkedIn" class="soclogo" /></a>
+        <a href="https://leetcode.com/u/prakash17_02/" target="_blank" rel="noopener noreferrer"><img src="asserts\leetcode.svg" alt="leetcode" class="soclogo" /></a>
+        
+      </div>
+    </nav>
 
     
-    <!--scripts-->
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </header>
+  <!-- Mobile menu -->
+    <div class="mobmenu">
+      <img src="asserts/angle-small-down.svg" class="mob-arrow" onclick="open_menu(this)" />
+      <div class="menuops">
+        <a href="#home"><img src="asserts/icons8-home (1).svg" class="menulogo" /></a><p>Home</p>
+        <a href="#about"><img src="asserts/flexible.png" class="menulogo" /></a><p>About</p>
+        <a href="#skills"><img src="asserts/icons8-skills-64.png" class="menulogo" /></a><p>Skills</p>
+        <a href="#work"><img src="asserts/student.png" class="menulogo" /></a><p>My Work</p>
+        <a href="#certificates"><img src="asserts/icons8-certificate-64 (1).png" class="menulogo" /></a><p>Certificates</p>
+        <a href="#contact"><img src="asserts/icons8-contact-50.png" class="menulogo" /></a><p>Contact</p>
+      </div>
+    </div>
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="grid_home">
+      <div class="homediv1">
+        <div class="img-container">
+          <img src="asserts/imglogo.jpg" alt="Prakash" />
+        </div>
+      </div>
 
+      <div class="hi_name">
+        <p class="name_hi">Hi there,</p>
+        <p class="name_hi">I'm <span class="prakash-text">Prakash</span></p>
+        <p class="name_highlight">
+            Aspiring Data Scientist | AI/ML Enthusiast | Automation Explorer | Effective Communicator & Team Player | Problem Solver
+        </p>
+
+        <div class="intro_animation">
+            <span class="introp1" id="typing-animation">
+                A <strong>Creative Developer</strong> focused on <em>“Crafting Code with Purpose.”</em>
+            </span>
+        </div>
+
+        <div class="home_button">
+            <button>Download Resume</button>
+            <button>Contact Me</button>
+        </div>
+        </div>
+  
+
+      <div class="home_text">
+        <p>
+          Passionate about building intelligent applications, designing seamless user experiences, and leveraging AI for problem-solving.
+        </p><br />
+        <p>
+          Constantly exploring cutting-edge technologies, automation, and Machine Learning, I believe in writing clean, purposeful, and impactful code.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placeholder sections -->
+  <section id="about">
+
+    <div class="about_text">
+        <section class="about-section">
+            <div class="about-container">
+              
+              <!-- Left (Main Text) -->
+              <div class="glass-box main-text" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="200">
+                
+                  <h2>About Me</h2><br>
+                  <p>Hi, I’m <strong>Prakash N</strong>, a final-year Computer Science and Engineering student from <strong>R.V.S. College of Engineering</strong> with a current <strong>CGPA of 8.8</strong>.</p>
+                  <br>
+                  <p>I’m passionate about <strong>Data Science</strong>, <strong>AI/ML</strong>, and <strong>Intelligent Automation</strong>. My work includes real-time face recognition systems, automated email workflows, and advertisement ROI prediction models.</p>
+                  <br>
+                  <p>I care deeply about <strong>clean code</strong>, <strong>performance</strong>, and creating value. Whether solving a technical problem or organizing an event, I bring curiosity, focus, and full heart to every challenge.</p>
+              </div>
+          
+              <!-- Right Top (Quote) -->
+              <div class="glass-box quote-box" data-aos="fade-left" data-aos-delay="200">
+                <h3>💡 My Motto</h3>
+                <p><em>"All we have to decide is what to do with the time that is given to us."</em></p>
+              </div>
+          
+              <!-- Right Bottom (Bible Verse) -->
+              <div class="glass-box bible-box" data-aos="fade-left" data-aos-delay="200">
+                <h3>📖 Bible Verse</h3>
+                <p><em>“Whatever your hand finds to do, do it with all your might.”</em></p>
+                <span>— Ecclesiastes 9:10</span>
+                
+                <p><em>“உன் கையால் செய்யச் சேர்ந்த எந்த வேலையாயினும், அதனை உன் முழு வல்லமையினாலே செய்.”</em></p>
+                <span>— பிரசங்கி 9:10</span>
+              </div>
+          
+            </div>
+          </section>
+          
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <section class="skills-section" id="skills">
+      <div class="tabs">
+        <button class="tab-button active" data-tab="technical">Technical</button>
+        <button class="tab-button" data-tab="soft">Soft Skills</button>
+        <button class="tab-button" data-tab="tools">Tools</button>
+      </div>
+
+      <div class="skills-container">
+        <!-- TECHNICAL SKILLS -->
+        <div class="skills-grid tab-content active" id="technical" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+            <img src="asserts/icons/python.svg" alt="Python" /><span>Python</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\icons8-sql-48.png" alt="SQL" /><span>SQL</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\icons8-postgresql-50.png" alt="Postgres SQL" /><span>Postgres SQL</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\icons8-pandas-48.png" alt="Pandas" /><span>Pandas</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\icons8-numpy-48.png" alt="NumPy" /><span>NumPy</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts/icons/icons8-html-48.png" alt="HTML" /><span>HTML</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\icons8-css-48.png" alt="CSS" /><span>CSS</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\icons8-opencv-48.png" alt="OpenCV" /><span>OpenCV</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\scikit-learn.png" alt="scikit-learn" /><span>Scikit-learn</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\OIP.jpeg" alt="OOP" /><span>OOP</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\icons8-algorithms-64.png" alt="DSA" /><span>DSA</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\pngegg.png" alt="Computer Programming" /><span>Computer Programming</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\icons8-mongodb-50.png" alt="MNGODB" /><span>Mongo DB</span>
+          </div>
+        </div>
+
+        <!-- SOFT SKILLS -->
+        <div class="skills-grid tab-content" id="soft" data-aos="fade-up" data-aos-delay="200">
+        <div class="skill-card" data-aos="fade-up">
+          <img src="asserts\icons\icons8-problem-solving-50.png" alt="Problem Solving" />
+          <span>Problem Solving & Critical Thinking</span>
+        </div>
+        <div class="skill-card" data-aos="fade-up">
+          <img src="asserts\icons\icons8-review-48.png" alt="Fast Learner" />
+          <span>Fast Learner, Open to Feedback</span>
+        </div>
+        <div class="skill-card" data-aos="fade-up">
+          <img src="asserts\icons\icons8-responsibility-64.png" alt="Responsibility" />
+          <span>Responsible & Committed</span>
+        </div>
+        <div class="skill-card" data-aos="fade-up">
+          <img src="asserts\icons\icons8-team-48.png" alt="Team Player" />
+          <span>Proactive & Team-Focused</span>
+        </div>
+        <div class="skill-card" data-aos="fade-up">
+          <img src="asserts\icons\icons8-time-management-64.png" alt="Time Management" />
+          <span>Time Management</span>
+        </div>
+        <div class="skill-card" data-aos="fade-up">
+          <img src="asserts\icons\icons8-more-details-48.png" alt="Detail-Oriented" />
+          <span>Detail-Oriented & Quality-Driven</span>
+        </div>
+      </div>
+
+        <!-- TOOLS / ADDITIONAL SKILLS -->
+        <div class="skills-grid tab-content" id="tools" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\icons8-project-jupyter-24.png" alt="Jupyter" /><span>Jupyter</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\icons8-google-colab-48.png" alt="Google Colab" /><span>Colab</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\icons8-uipath-48.png" alt="UiPath" /><span>UiPath</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\icons8-firebase-48.png" alt="Firebase" /><span>Firebase</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\Flask.svg" alt="Flask" /><span>Flask</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\RestApi.svg" alt="REST API" /><span>REST APIs</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\icons8-canva-48.png" alt="Canva" /><span>Canva</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\icons8-google-cloud-platform-48.png" alt="Google Cloud" /><span>GCP</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts/icons/icons8-git-48.png" alt="Git" /><span>Git/Git Hub</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\vercel.svg" alt="Vercel" /><span>Vercel</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\icons8-word-48.png" alt="Word" /><span>Word</span>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <img src="asserts\icons\icons8-ppt.gif" alt="PPT" /><span>PPT</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </section>
+
+  <section id="work"></section>
+
+  <section id="certificates"></section>
+
+  <section id="contact"></section>
+</div>
+
+<!--bg animation-->
+<div class="background-blobs">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+</div>
+
+
+
+
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="script.js"></script>
 </body>
 </html>
